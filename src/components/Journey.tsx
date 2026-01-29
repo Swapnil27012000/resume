@@ -63,7 +63,7 @@ const publicationsData: JourneyItem[] = [
         date: "2026",
         title: "Research Paper Published",
         subtitle: "International Journal of Science and Research (IJSR)",
-        description: "Published a research paper on 'A Comprehensive Survey on AI-Driven Mammography-Based Breast Cancer Detection.",
+        description: "Published a research paper on 'A Comprehensive Survey on AI-Driven Mammography-Based Breast Cancer Detection.'",
         link: "/research-paper-1.pdf" // Update this with your actual PDF path
     }
 ];
@@ -140,8 +140,6 @@ export const Journey = () => {
                             ))}
                         </div>
                     </div>
-
-
 
                 </div>
             </div>

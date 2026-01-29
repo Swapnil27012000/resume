@@ -13,7 +13,7 @@ const firaCode = Fira_Code({
 });
 
 export const metadata: Metadata = {
-  title: "Pedro Van-Lume | Web Developer",
+  title: "Portfolio-Swapnil | Web Developer",
   description: "Building your dream pixel by pixel.",
 };
 
