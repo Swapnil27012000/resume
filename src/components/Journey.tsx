@@ -56,6 +56,16 @@ const experienceData: JourneyItem[] = [
     }
 ];
 
+const publicationsData: JourneyItem[] = [
+    {
+        id: "1",
+        date: "2026",
+        title: "Research Paper Published",
+        subtitle: "International Journal of Science and Research (IJSR)",
+        description: "Published a research paper on 'A Comprehensive Survey on AI-Driven Mammography-Based Breast Cancer Detection."
+    }
+];
+
 export const Journey = () => {
     return (
         <section id="portfolio" className="py-20 bg-[#050510]">
@@ -65,8 +75,26 @@ export const Journey = () => {
                     <span className="text-[#00f3ff]">Professional Journey</span>
                 </h2>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
+                    {/* Publications Column */}
+                    <div>
+                        <h3 className="text-2xl font-bold mb-8 flex items-center gap-3">
+                            <span className="w-2 h-8 bg-gradient-to-b from-[#00f3ff] to-[#bd00ff] rounded-full block"></span>
+                            Publications
+                        </h3>
+                        <div className="space-y-6">
+                            {publicationsData.map((item) => (
+                                <Card key={item.id} className="group">
+                                    <span className="text-sm font-mono text-[#00f3ff] mb-2 block">{item.date}</span>
+                                    <h4 className="text-xl font-bold text-white mb-1 group-hover:text-[#00f3ff] transition-colors">{item.title}</h4>
+                                    <p className="text-gray-400 text-sm mb-4">{item.subtitle}</p>
+                                    <p className="text-gray-500 text-sm leading-relaxed">{item.description}</p>
+                                </Card>
+                            ))}
+                        </div>
+                    </div>
+                    
                     {/* Education Column */}
                     <div>
                         <h3 className="text-2xl font-bold mb-8 flex items-center gap-3">
@@ -89,7 +117,7 @@ export const Journey = () => {
                     <div>
                         <h3 className="text-2xl font-bold mb-8 flex items-center gap-3">
                             <span className="w-2 h-8 bg-gradient-to-b from-[#bd00ff] to-[#00f3ff] rounded-full block"></span>
-                            Professional Experience
+                            Experience
                         </h3>
                         <div className="space-y-6">
                             {experienceData.map((item) => (
@@ -103,8 +131,11 @@ export const Journey = () => {
                         </div>
                     </div>
 
+                    
+
                 </div>
             </div>
         </section>
     );
 };
+
