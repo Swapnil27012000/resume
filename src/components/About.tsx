@@ -64,11 +64,11 @@ export const About = () => {
                                 <p className="text-sm text-gray-400">Years Experience</p>
                             </div>
                             <div>
-                                <h3 className="text-3xl font-bold text-white mb-1">50+</h3>
+                                <h3 className="text-3xl font-bold text-white mb-1">10+</h3>
                                 <p className="text-sm text-gray-400">Projects Completed</p>
                             </div>
                             <div>
-                                <h3 className="text-3xl font-bold text-white mb-1">10+</h3>
+                                <h3 className="text-3xl font-bold text-white mb-1">5+</h3>
                                 <p className="text-sm text-gray-400">Happy Clients</p>
                             </div>
                         </div>
