@@ -6,6 +6,7 @@ interface JourneyItem {
     title: string;
     subtitle: string;
     description?: string;
+    link?: string;
 }
 
 const educationData: JourneyItem[] = [
@@ -62,7 +63,8 @@ const publicationsData: JourneyItem[] = [
         date: "2026",
         title: "Research Paper Published",
         subtitle: "International Journal of Science and Research (IJSR)",
-        description: "Published a research paper on 'A Comprehensive Survey on AI-Driven Mammography-Based Breast Cancer Detection."
+        description: "Published a research paper on 'A Comprehensive Survey on AI-Driven Mammography-Based Breast Cancer Detection.",
+        link: "/research-paper-1.pdf" // Update this with your actual PDF path
     }
 ];
 
@@ -85,16 +87,24 @@ export const Journey = () => {
                         </h3>
                         <div className="space-y-6">
                             {publicationsData.map((item) => (
-                                <Card key={item.id} className="group">
-                                    <span className="text-sm font-mono text-[#00f3ff] mb-2 block">{item.date}</span>
-                                    <h4 className="text-xl font-bold text-white mb-1 group-hover:text-[#00f3ff] transition-colors">{item.title}</h4>
-                                    <p className="text-gray-400 text-sm mb-4">{item.subtitle}</p>
-                                    <p className="text-gray-500 text-sm leading-relaxed">{item.description}</p>
-                                </Card>
+                                <a
+                                    key={item.id}
+                                    href={item.link}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="block cursor-pointer"
+                                >
+                                    <Card className="group">
+                                        <span className="text-sm font-mono text-[#00f3ff] mb-2 block">{item.date}</span>
+                                        <h4 className="text-xl font-bold text-white mb-1 group-hover:text-[#00f3ff] transition-colors">{item.title}</h4>
+                                        <p className="text-gray-400 text-sm mb-4">{item.subtitle}</p>
+                                        <p className="text-gray-500 text-sm leading-relaxed">{item.description}</p>
+                                    </Card>
+                                </a>
                             ))}
                         </div>
                     </div>
-                    
+
                     {/* Education Column */}
                     <div>
                         <h3 className="text-2xl font-bold mb-8 flex items-center gap-3">
@@ -131,7 +141,7 @@ export const Journey = () => {
                         </div>
                     </div>
 
-                    
+
 
                 </div>
             </div>
