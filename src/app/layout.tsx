@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Fira_Code } from "next/font/google";
 import "./globals.css";
+import { Cursor } from "@/src/components/Cursor";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -27,6 +28,7 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${firaCode.variable} antialiased selection:bg-[#00f3ff] selection:text-black`}
       >
+        <Cursor />
         {children}
       </body>
     </html>
