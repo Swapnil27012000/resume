@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { X, Send, Loader2 } from "lucide-react";
+import { GoogleTranslate } from "../components/GoogleTranslate";
+
 
 export const Contact = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -67,6 +69,7 @@ export const Contact = () => {
                         <a href="https://github.com/Swapnil27012000" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Github</a>
                         <a href="https://www.linkedin.com/in/swapnil-kamble2701" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">LinkedIn</a>
                         <a href="https://x.com/kamble2701" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Twitter</a>
+                        <GoogleTranslate />
                     </div>
                 </footer>
             </div>
