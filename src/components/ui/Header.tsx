@@ -12,6 +12,7 @@ export const Header = () => {
                     <Link href="#home" className="hover:text-white transition-colors">Home</Link>
                     <Link href="#about" className="hover:text-white transition-colors">About</Link>
                     <Link href="#portfolio" className="hover:text-white transition-colors">Portfolio</Link>
+                    <Link href="#projects" className="hover:text-white transition-colors">Projects</Link>
                     <Link href="#contact" className="hover:text-white transition-colors">Contact</Link>
 
                     <button className="flex items-center gap-2 hover:text-white transition-colors">
