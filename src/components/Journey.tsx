@@ -59,12 +59,12 @@ const experienceData: JourneyItem[] = [
 
 const publicationsData: JourneyItem[] = [
     {
-        id: "1",
-        date: "2026",
-        title: "Research Paper Published",
-        subtitle: "International Journal of Science and Research (IJSR)",
-        description: "Published a research paper on 'A Comprehensive Survey on AI-Driven Mammography-Based Breast Cancer Detection.'",
-        link: "/research-paper-1.pdf" // Update this with your actual PDF path
+    id: "1",
+    date: "2026",
+    title: "Research Paper (Ongoing)",
+    subtitle: "Target Journal: International Journal of Science and Research (IJSR)",
+    description: "Ongoing research on 'A Comprehensive Survey on AI-Driven Mammography-Based Breast Cancer Detection,' focusing on recent advancements, methodologies, and challenges in AI-assisted medical imaging.",
+    link: "/research-paper-1.pdf" // Update this with your actual PDF path
     }
 ];
 
